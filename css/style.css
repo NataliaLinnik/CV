@@ -24,7 +24,7 @@ body {
 
 .sidebar {
   background: linear-gradient(#485061, #16191f);
-  width: 370px;
+  width: 32%;
   padding-bottom: 40px;
 }
 
@@ -35,9 +35,8 @@ body {
 }
 
 .about-me-container {
-  padding-left: 90px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 110px 90px;
+  width: 68%;
 }
 
 .contacts-container {
@@ -54,8 +53,8 @@ body {
   margin-bottom: 20px;
 }
 
-.adress {
-  font-size: 14px;
+.personal-info-item {
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #bbc5dc;
@@ -63,35 +62,38 @@ body {
 }
 
 .contacts-link {
-  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #bbc5dc;
 }
 
 .contacts-link-type {
-  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: white;
   margin-right: 10px;
 }
 
-.tech-skills-title {
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.skills-title {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
-  color: #fff;
 }
 
-.tech-skills-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+.skills-container {
+  margin-top: 24px;
 }
 
-.tech-skills-item {
+.skills-item {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -99,17 +101,17 @@ body {
   color: #346950;
 }
 
-.tech-skills-text {
-  color: #f0f1f2;
+.skills-text {
+  color: #16191f;
 }
 
-.soft-skills-container {
+.hobbies-container {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 55px;
 }
 
-.soft-skills-title {
+.hobbies-title {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -117,16 +119,16 @@ body {
   color: #fff;
 }
 
-.soft-skills-item {
-  font-size: 14px;
+.hobbies-item {
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   margin-left: 15px;
   color: #346950;
 }
 
-.soft-skills-text {
-  color: #b9bcc1;
+.hobbies-text {
+  color: #bbc5dc;
 }
 
 .profession {
@@ -230,4 +232,9 @@ body {
 
 .education-container {
   padding-bottom: 16px;
+}
+
+.link-text {
+  line-height: 24px;
+  color: #16191f;
 }
