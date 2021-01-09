@@ -5,12 +5,10 @@
 }
 
 body {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 20px;
   background: #346950;
   font-family: Montserrat;
+  color: #2f2f2f;
 }
 
 .wrapper {
@@ -34,15 +32,24 @@ body {
   margin: 40px 24px;
 }
 
+.my-photo-mobile {
+  display: none;
+  border-radius: 100%;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
 .about-me-container {
   padding: 110px 90px;
   width: 68%;
 }
 
 .contacts-container {
-  margin-left: 40px;
-  margin-top: 60px;
-  margin-right: 40px;
+  margin: 60px 40px 0;
+}
+
+.contacts-container-mobile {
+  display: none;
 }
 
 .contacts-title {
@@ -107,13 +114,11 @@ body {
   color: #595959;
 }
 
-.hobbies-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+.feature-container {
+  margin: 50px 40px;
 }
 
-.hobbies-title {
+.feature-title {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -121,7 +126,7 @@ body {
   color: white;
 }
 
-.hobbies-item {
+.feature-item {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -129,7 +134,7 @@ body {
   color: #346950;
 }
 
-.hobbies-text {
+.feature-text {
   color: #bbc5dc;
 }
 
@@ -232,4 +237,105 @@ body {
 .link-text {
   line-height: 24px;
   color: #16191f;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0;
+  }
+  .skills {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .skills-container {
+    width: auto;
+  }
+  .sidebar {
+    width: 40%;
+  }
+  .about-me-container {
+    padding: 80px 40px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .profession {
+    text-align: center;
+    font-size: 18px;
+  }
+  .my-photo {
+    display: none;
+  }
+  .my-photo-mobile {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .sidebar {
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-me-container {
+    padding: 40px 24px;
+    width: 100%;
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .info-container {
+    margin-bottom: 32px;
+  }
+  .feature-container {
+    margin: 24px 24px;
+  }
+  .feature-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .contacts-container {
+    display: none;
+  }
+  .contacts-container-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding: 24px 0;
+  }
+  .contacts-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #2f2f2f;
+  }
+  .personal-info-item {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+  }
+  .contacts-link {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+  }
 }
